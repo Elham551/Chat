@@ -88,7 +88,7 @@ Ensure the port used by the backend (e.g., 7213) is open:
 #### 1. Navigate to the frontend directory:
 
 ```bash
-cd frontend
+cd chat-ui
 ```
 
 #### 2. Install dependencies:

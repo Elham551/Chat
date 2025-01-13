@@ -1,0 +1,58 @@
+:root {
+    --online-color: green; /* Online status color */
+    --offline-color: gray; /* Offline status color */
+    --participant-font-size-small: 0.8rem; /* Font size for small screens */
+    --participant-font-size-medium: 0.9rem; /* Font size for medium screens */
+    --indicator-size: 10px; /* Size of the status indicator */
+    --white:#fff;
+}
+
+.participants-tab {
+    background-color: var(--white);
+    padding: 1rem;
+    height: 70vh;
+    overflow-y: auto;
+}
+
+.participant {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.status-indicator {
+    width: var(--indicator-size);
+    height: var(--indicator-size);
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.status-online {
+    background-color: var(--online-color);
+}
+
+.status-offline {
+    background-color: var(--offline-color);
+}
+
+/* Responsive for medium screens */
+@media (max-width: 768px) {
+    .participants-tab {
+        height: 60vh;
+    }
+
+    .participant {
+        font-size: var(--participant-font-size-medium);
+    }
+}
+
+/* Responsive for small screens */
+@media (max-width: 480px) {
+    .participants-tab {
+        padding: 0.5rem;
+    }
+
+    .participant {
+        font-size: var(--participant-font-size-small);
+    }
+}
